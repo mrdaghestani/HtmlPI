@@ -4,7 +4,7 @@
 
 ## Installation
 
-First you hav to install [wkhtmltopdf](http://wkhtmltopdf.org/downloads.html)
+First you have to install [wkhtmltopdf](http://wkhtmltopdf.org/downloads.html) on application server (your developing system or client's systems)
 
 Then simply install HtmlPi package from [NuGet](https://www.nuget.org/packages/HtmlPi.dll):
 
