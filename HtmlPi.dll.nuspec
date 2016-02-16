@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>HtmlPi.dll</id>
+    <version>1.0.0</version>
+    <authors>MohammadReza Daghestani</authors>
+    <owners>MohammadReza Daghestani</owners>
+    <!--<licenseUrl>http://LICENSE_URL_HERE_OR_DELETE_THIS_LINE</licenseUrl>-->
+    <projectUrl>https://github.com/mrdaghestani/HtmlPI</projectUrl>
+    <iconUrl>http://www.border7.com/blog/wp-content/uploads/2012/07/HTML.png</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>wkhtmltopdf .net wrapper. To using this wrapper you must install wkhtmltopdf first.</description>
+    <!--<releaseNotes>Summary of changes made in this release of the package.</releaseNotes>-->
+    <copyright>Copyright 2016</copyright>
+    <tags>Html PDF Image Convert Generate HtmlToPdf HtmlToImage</tags>
+    <!--<dependencies>
+      <dependency id="SampleDependency" version="1.0" />
+    </dependencies>-->
+  </metadata>
+</package>
