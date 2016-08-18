@@ -100,6 +100,10 @@ namespace HtmlPI
         private string GetArguments(GenerateSettings settings)
         {
             var tmp = "";
+            if (settings.UsePrintMediaType)
+            {
+                tmp += "--print-media-type";
+            }
             switch (settings.OutputType)
             {
                 case OutputType.PDF:

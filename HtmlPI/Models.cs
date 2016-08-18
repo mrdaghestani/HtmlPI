@@ -15,6 +15,7 @@ namespace HtmlPI
         public GenerateSettings()
         {
             GlobalOptions = new GlobalOptions();
+            UsePrintMediaType = false;
         }
         /// <summary>
         /// Html Url, it must accessible from internet without any athentication
@@ -37,6 +38,8 @@ namespace HtmlPI
             set { _outputType = value; }
         }
         public GlobalOptions GlobalOptions { get; set; }
+
+        public bool UsePrintMediaType { get; set; }
     }
     public class GlobalOptions
     {
