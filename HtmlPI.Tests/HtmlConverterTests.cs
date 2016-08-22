@@ -12,10 +12,12 @@ namespace HtmlPI.Tests
         {
             var converter = new HtmlConverter();
             var filePath = converter.Convert(new GenerateSettings
-                                             {
-                                                 HtmlFileContent = "<b>Bold Text</b><br /><br /><i>Italic Text</i>",
-                                                 OutputType = OutputType.PDF
-                                             });
+            {
+                //HtmlFileContent = "<b>Bold Text</b><br /><br /><i>Italic Text</i>",
+                Url = "http://wkhtmltopdf.org/downloads.html",
+                OutputType = OutputType.Image,
+                UsePrintMediaType = true,
+            });
             Assert.IsTrue(File.Exists(filePath));
         }
     }
