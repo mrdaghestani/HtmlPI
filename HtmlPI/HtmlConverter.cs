@@ -115,6 +115,43 @@ namespace HtmlPI
                     {
                         tmp += " --grayscale";
                     }
+
+                    if (!string.IsNullOrEmpty(settings.GlobalOptions.MarginBottom))
+                    {
+                        tmp += string.Format(" -B {0}", settings.GlobalOptions.MarginBottom);
+                    }
+                    if (!string.IsNullOrEmpty(settings.GlobalOptions.MarginLeft))
+                    {
+                        tmp += string.Format(" -L {0}", settings.GlobalOptions.MarginLeft);
+                    }
+                    if (!string.IsNullOrEmpty(settings.GlobalOptions.MarginRight))
+                    {
+                        tmp += string.Format(" -R {0}", settings.GlobalOptions.MarginRight);
+                    }
+                    if (!string.IsNullOrEmpty(settings.GlobalOptions.MarginTop))
+                    {
+                        tmp += string.Format(" -T {0}", settings.GlobalOptions.MarginTop);
+                    }
+
+
+                    if (!string.IsNullOrEmpty(settings.GlobalOptions.HeaderHtmlUrl))
+                    {
+                        tmp += string.Format(" --header-html {0}", settings.GlobalOptions.HeaderHtmlUrl);
+                    }
+                    if (!string.IsNullOrEmpty(settings.GlobalOptions.FooterHtmlUrl))
+                    {
+                        tmp += string.Format(" --footer-html {0}", settings.GlobalOptions.FooterHtmlUrl);
+                    }
+
+                    if (settings.GlobalOptions.ShowFooterLine)
+                    {
+                        tmp += " --footer-line";
+                    }
+                    if (settings.GlobalOptions.ShowHeaderLine)
+                    {
+                        tmp += " --header-line";
+                    }
+
                     tmp += string.Format(" --copies {0}", settings.GlobalOptions.Copies);
                     break;
                 case OutputType.Image:

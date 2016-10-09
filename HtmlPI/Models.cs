@@ -74,5 +74,59 @@ namespace HtmlPI
             set { _grayscale = value; }
         }
 
+        private string _marginBottom;
+        public string MarginBottom
+        {
+            get { return _marginBottom; }
+            set { _marginBottom = value; }
+        }
+
+        private string _marginLeft;
+        public string MarginLeft
+        {
+            get { return _marginLeft; }
+            set { _marginLeft = value; }
+        }
+
+        private string _marginRight;
+        public string MarginRight
+        {
+            get { return _marginRight; }
+            set { _marginRight = value; }
+        }
+        private string _marginTop;
+        public string MarginTop
+        {
+            get { return _marginTop; }
+            set { _marginTop = value; }
+        }
+
+        private string _footerHtmlUrl;
+        public string FooterHtmlUrl
+        {
+            get { return _footerHtmlUrl; }
+            set { _footerHtmlUrl = value; }
+        }
+
+        private string _headerHtmlUrl;
+        public string HeaderHtmlUrl
+        {
+            get { return _headerHtmlUrl; }
+            set { _headerHtmlUrl = value; }
+        }
+
+        private bool _showHeaderLine;
+        public bool ShowHeaderLine
+        {
+            get { return _showHeaderLine; }
+            set { _showHeaderLine = value; }
+        }
+        private bool _showFooterLine;
+        public bool ShowFooterLine
+        {
+            get { return _showFooterLine; }
+            set { _showFooterLine = value; }
+        }
+
     }
 }
